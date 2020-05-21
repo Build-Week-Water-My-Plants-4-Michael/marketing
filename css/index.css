@@ -134,26 +134,38 @@ body {
   margin: 2rem;
 }
 nav {
+  background-color: #dadfda;
   font-family: 'Playfair Display', serif;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 nav a {
+  color: black;
   text-decoration: none;
   font-size: 1rem;
   padding-left: 1rem;
-  margin: 1rem;
+  margin: 3rem;
 }
 nav button {
+  background-color: #dbe0da;
   font-size: 1rem;
-  padding: 0.9rem;
+  padding: 0.8rem;
   font-family: 'Playfair Display', serif;
 }
+a:hover {
+  color: #dadfda;
+}
+a:active {
+  color: #BBBBBB;
+}
+button:hover {
+  color: #dadfda;
+}
+/************************HERO SECTION************************/
 .heroSec img {
   width: 100%;
   height: 56vh;
-  margin-top: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .heroSec h1 {
@@ -166,11 +178,87 @@ nav button {
   transform: translate(-50%, -50%);
 }
 .heroButt {
-  color: #dbe0da;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.4rem;
+  color: black;
+  background-color: #dadfda;
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.15s;
   position: absolute;
   top: 40%;
   left: 40%;
   transform: translate(-50%, -50%);
+}
+.heroButt:hover {
+  color: #DDDDDD;
+}
+.heroButt:active {
+  color: #BBBBBB;
+}
+/************************HOW IT WORKS SECTION************************/
+.howSec {
+  background-color: #edefec;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+  text-align: center;
+}
+.howSec img {
+  margin-top: 30vh;
+  width: 45vh;
+  height: 45vh;
+  border-radius: 50%;
+}
+.howSec p {
+  margin-top: 1vh;
+  font-family: 'Playfair Display', serif;
+}
+.howSec h3 {
+  font-family: 'Poppins', sans-serif;
+}
+.heroSec img {
+  width: 100%;
+  height: 56vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.heroSec h1 {
+  color: #dbe0da;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  position: absolute;
+  top: 33%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.heroButt {
+  color: black;
+  background-color: #dadfda;
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.15s;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.heroButt:hover {
+  color: #dadfda;
+}
+.heroButt:active {
+  color: #BBBBBB;
 }

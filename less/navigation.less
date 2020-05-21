@@ -1,21 +1,32 @@
   
     nav {
+        background-color: @themeColor2;
         font-family: @fontSecond;
         .align-flex;   
 
         a {
+            color: black;
             text-decoration: none;
             font-size: 1rem;
             padding-left: 1rem;
-            margin: 1rem;
+            margin: 3rem;
         }
         button {
+            background-color: @themeColor;
             font-size: 1rem;
-            padding: .9rem;
+            padding: .8rem;
             font-family: @fontSecond;
         }
     }
 
-
-
+    a:hover {
+        color: @themeColor2;
+    }
     
+    a:active {
+        color:#BBBBBB;
+    }
+
+    button:hover {
+        color: @themeColor2;
+    }
