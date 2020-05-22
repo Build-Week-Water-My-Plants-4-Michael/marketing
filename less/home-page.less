@@ -1,6 +1,7 @@
 
 /************************HERO SECTION************************/
 .heroSec img {
+    object-fit: cover;
     width: 100%;
     height: 56vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -49,12 +50,26 @@
 .howSec {
     background-color: @themeColor1;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 2vh;
     text-align: center;
 }
+.howDivs {
+    display: flex;
+    flex-direction: row;
+
+}
+.howH3 {
+    display: flex;
+    justify-content: center;
+}
+.howH3 h3 {
+    font-size: 2rem;
+}
 .howSec img {
-    margin-top: 30vh;
+    object-fit: cover;
+    margin-top: 20vh;
     width: 45vh;
     height: 45vh;
     border-radius: 50%; 
@@ -65,5 +80,68 @@
     font-family: @fontSecond;
 }
 .howSec h3 {
+    margin: 5vh;
     font-family: @fontMain;
 }
+
+
+
+/************************HOW IT WORKS SECTION************************/
+.featSec {
+    background-color: @themeColor1;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: @fontSecond;
+}
+
+.featSec img {
+    margin-top: 30vh;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%; 
+    margin-left: 10vh;
+}
+
+.featSec p {
+    margin: 10vh;
+}
+
+/************************TESTIMONIAL SECTION************************/
+.testSec {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2vh;
+    text-align: center;
+}
+.testDivs {
+    display: flex;
+    flex-direction: row;
+
+}
+.testH3 {
+    display: flex;
+    justify-content: center;
+}
+.testH3 h3 {
+    font-size: 2rem;
+}
+.testSec img {
+    object-fit: cover;
+    margin-top: 20vh;
+    width: 45vh;
+    height: 45vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.testSec p {
+    margin-top: 1vh;
+    font-family: @fontSecond;
+}
+.testSec h3 {
+    margin: 5vh;
+    font-family: @fontMain;
+}
+/************************FOOTER SECTION************************/
