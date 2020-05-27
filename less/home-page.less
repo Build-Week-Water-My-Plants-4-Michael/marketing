@@ -5,6 +5,7 @@
     width: 100%;
     height: 56vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
     }
 
 .heroSec h1 {
@@ -12,18 +13,24 @@
     font-family: @fontMain;
     font-size: 3rem;
     position: absolute;
-    top: 33%;
+    top: 30%;
     left: 40%;
     transform: translate(-50%, -50%);
+    @media (max-width: 500px) {
+        top: 35%;
+    }
 }
 .heroSec p {
     color: @themeColor;
     font-family: @fontMain;
     font-size: .9rem;
     position: absolute;
-    top: 36%;
+    top: 40%;
     left: 40%;
     transform: translate(-30%, -1%);
+        @media (max-width: 500px) {
+        top: 46%;
+    }
 }
 .heroButt {
     color: black;
@@ -40,9 +47,12 @@
     text-align:center;
     transition: all 0.15s;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
+        @media (max-width: 500px) {
+        top: 67%;
+}
 }
 
 .heroButt:hover {
@@ -67,8 +77,11 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 10vh;
-
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 }
+
 .howH3 {
     .flexCenter;
 }
@@ -76,12 +89,12 @@
     font-size: 2rem;
 }
 .howSec img {
+    height: 50vh;
+    width: 50vh;
+    max-width: 100%;
     object-fit: cover;
-    margin-top: 20vh;
-    width: 45vh;
-    height: 45vh;
-    border-radius: 50%; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
 }
 
 .howSec p {
@@ -108,7 +121,9 @@
     margin-bottom: 5rem;
     display: flex;
     flex-direction: row;
-}
+    }
+
+    
 .featH3 {
     .flexCenter;
 }
@@ -116,22 +131,25 @@
     font-size: 2rem;
 }
 .featSec img {
-    margin-left: 6rem;
+    margin: 15vh;
+    height: 44vh;
+    width: 44vh;
+    max-width: 100%;
     object-fit: cover;
-    margin-top: 20vh;
-    width: 23vh;
-    height: 23vh;
+    margin-top: 20h;
     border-radius: 50%; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            @media (max-width: 800px) {
+        width: 10vh;
+        height: 10vh;
+    }
 }
 
 .featSec p {
-    margin-left: 6rem;
     font-family: @fontSecond;
 }
 .featSec h3 {
     margin: 5vh;
-    margin-left: 10rem;
     font-family: @fontMain;
 }
 /************************TESTIMONIAL SECTION************************/
@@ -147,8 +165,12 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 5rem;
-
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 }
+
+
 .testH3 {
     .flexCenter;
 }
@@ -157,15 +179,17 @@
 }
 .testSec img {
     object-fit: cover;
-    margin-top: 20vh;
-    width: 45vh;
-    height: 45vh;
+    height: 44vh;
+    width: 44vh;
+    max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
 }
 
 .testSec p {
     margin-top: 1vh;
     font-family: @fontSecond;
+    font-style: italic;
 }
 .testSec h3 {
     margin: 5vh;
