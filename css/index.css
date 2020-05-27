@@ -290,6 +290,7 @@ nav button:hover {
   display: flex;
   flex-direction: row;
   margin-bottom: 10vh;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .howDivs {
@@ -332,6 +333,7 @@ nav button:hover {
   margin-bottom: 5rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   .featDivs {
@@ -368,7 +370,7 @@ nav button:hover {
   margin: 5vh;
   font-family: 'Fjalla One', sans-serif;
 }
-.featSec a {
+.featSec h3 a {
   text-decoration: none;
 }
 /************************TESTIMONIAL SECTION************************/
@@ -384,6 +386,7 @@ nav button:hover {
   display: flex;
   flex-direction: row;
   margin-bottom: 5rem;
+  justify-content: space-between;
 }
 @media (max-width: 800px) {
   .testDivs {
