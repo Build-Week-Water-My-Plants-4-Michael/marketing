@@ -121,9 +121,12 @@
     margin-bottom: 5rem;
     display: flex;
     flex-direction: row;
+        @media (max-width: 500px) {
+            margin-right: 50px;
+            
     }
-
-    
+    }
+ 
 .featH3 {
     .flexCenter;
 }
@@ -131,9 +134,9 @@
     font-size: 2rem;
 }
 .featSec img {
-    margin: 15vh;
-    height: 44vh;
-    width: 44vh;
+    margin: 10vh;
+    height: 40vh;
+    width: 40vh;
     max-width: 100%;
     object-fit: cover;
     margin-top: 20h;
@@ -147,11 +150,17 @@
 
 .featSec p {
     font-family: @fontSecond;
-}
+    }
+
+
 .featSec h3 {
     margin: 5vh;
     font-family: @fontMain;
 }
+
+    .featSec a{
+        text-decoration: none;
+    }
 /************************TESTIMONIAL SECTION************************/
 .testSec {
     background-color: #ffffff;

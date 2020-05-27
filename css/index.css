@@ -333,6 +333,11 @@ nav button:hover {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .featDivs {
+    margin-right: 50px;
+  }
+}
 .featH3 {
   display: flex;
   justify-content: center;
@@ -341,9 +346,9 @@ nav button:hover {
   font-size: 2rem;
 }
 .featSec img {
-  margin: 15vh;
-  height: 44vh;
-  width: 44vh;
+  margin: 10vh;
+  height: 40vh;
+  width: 40vh;
   max-width: 100%;
   object-fit: cover;
   margin-top: 20h;
@@ -362,6 +367,9 @@ nav button:hover {
 .featSec h3 {
   margin: 5vh;
   font-family: 'Fjalla One', sans-serif;
+}
+.featSec a {
+  text-decoration: none;
 }
 /************************TESTIMONIAL SECTION************************/
 .testSec {
